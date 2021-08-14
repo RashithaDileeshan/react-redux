@@ -24,6 +24,16 @@ class signUpLogin extends React.Component {
     console.log(this.props.AllPosts)
   }
 
+  // handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   // const dispatch = useDispatch();
+  //   dispatch(
+  //     login({
+  //       email: this.state.email,
+  //       password: this.state.password
+  //     })
+  //   )
+  // }
 
   signUpLogin = () => {
     let url = "/todo"
@@ -51,7 +61,7 @@ class signUpLogin extends React.Component {
             </div>
             <div className="col-sm-4"></div>
           </div>
-          <form onSubmit={this.continue}>
+          <form onSubmit={this.handleSubmit}>
             <div className="row pt-4">
               <div className="col-sm-4"></div>
               <div className="col-sm-4">
@@ -59,7 +69,7 @@ class signUpLogin extends React.Component {
                   fullWidth
                   type="text"
                   className="TextField"
-                  label="Enter Mobile Number"
+                  label="Enter Your Email"
                 />
               </div>
               <div className="col-sm-4"></div>
@@ -124,13 +134,4 @@ class signUpLogin extends React.Component {
     );
   }
 }
-function mapStateToProps(state){
-  return{
-    AllPosts:state.AllPost
-  }
-}
-
-// function matchDispatchProps(dispatch){
-//   return bindActionCreators({fetchPosts: fetchPosts},dispatch)
-// }
 export default withRouter(signUpLogin);
