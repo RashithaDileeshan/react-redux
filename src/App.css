@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(240, 243, 243) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TextField label {
+  font-family: Poppins;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c2cbe1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MuiInputBase-input {
+  padding: 17px !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.61;
+  letter-spacing: normal;
+  text-align: left !important;
+  color: #031440 !important;
+  padding-left: 0px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.passwordEye {
+  float: right;
+  font-size: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  z-index: 100;
+  position: relative;
+  color: #4c4c4e;
+}
+
+.tooltipHeader {
+  background-color: white !important;
+  color: #1246ab !important;
+  border: none;
+}
+
+.continue {
+  width: 523px !important;
+  height: 74px;
+  margin: 82px 232px 99px 67px;
+  padding: 21px 214px;
+  border-radius: 4px;
+  background-color: #1246ab;
   color: white;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  border: 1px solid #1246ab;
 }
 
-.App-link {
-  color: #61dafb;
+.continueDisable {
+  width: 523px !important;
+  height: 74px;
+  margin: 82px 232px 99px 67px;
+  padding: 21px 214px;
+  border-radius: 4px;
+  color: white;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e8edfa;
+  outline: none;
+  border: 1px solid #e8edfa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.createBtn {
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.todo-card{
+  margin: 10px 97px 21px 103px;
+}
+
+.text {
+  height: 27px;
+  flex-grow: 0;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.52;
+  letter-spacing: -0.18px;
+  text-align: left;
+  color: #000000;
+}
+
+.checkClick input[type="checkbox"]:disabled:after {
+  content: "✓";
+  background-color: white !important;
+  color: blue !important;
+  bottom: -7px;
+  position: absolute;
+}
+
+.check{
+  margin: 11px;
+}
+
+.horizontal-line{
+  height: 27.1px;
+  border-radius: 15px;
+  width: 72px;
+}
+
+.low{
+  background-color: #30e398;
+}
+
+.med{
+  background-color: #f7e224;
+}
+
+.high{
+  background-color: #f724c2;
 }
